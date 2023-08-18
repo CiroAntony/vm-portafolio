@@ -1,0 +1,19 @@
+#about {
+  height: 600px;
+  margin-top: 72px;
+}
+
+.about {
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.description {
+  font-size: 17px;
+}
+
+.img-profile {
+  touch-action: none;
+  height: 0 auto;
+  width: 0 auto;
+}
