@@ -1,5 +1,4 @@
 #about {
-  height: 600px;
   margin-top: 72px;
 }
 
@@ -10,10 +9,4 @@
 
 .description {
   font-size: 17px;
-}
-
-.img-profile {
-  touch-action: none;
-  height: 0 auto;
-  width: 0 auto;
 }
