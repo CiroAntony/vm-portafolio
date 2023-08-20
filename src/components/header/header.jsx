@@ -1,10 +1,12 @@
-import React from "react";
+import { React, useState } from "react";
 import "./header.css";
 import { FaRegSun, FaRegMoon, FaGithub, FaLinkedin } from "react-icons/fa";
+import { BiMenuAltRight } from "react-icons/bi";
 import { useDarkModeContext } from "../hooks/DarkModeContext";
 
 const Header = () => {
   const { isLightMode, toggleLightMode } = useDarkModeContext();
+  const [showMenu, setShowMenu] = useState(false);
 
   const titulo = "</ Vasquez>";
 
@@ -19,6 +21,10 @@ const Header = () => {
     }
   };
 
+  const handleMenu = () => {
+    setShowMenu(!showMenu);
+  };
+
   return (
     <header className="main-header w-full flex justify-center">
       <nav
@@ -26,7 +32,7 @@ const Header = () => {
         ${isLightMode
             ? "bg-white bg-opacity-25 text-black"
             : "backdrop-blur-xl text-white"
-          }`}
+          } max-lg:w-10/12 max-sm:w-11/12`}
       >
         <h1
           className={`logo font-bold text-[16px] ${isLightMode ? "text-black" : "text-white"
@@ -36,7 +42,12 @@ const Header = () => {
             {titulo}
           </a>
         </h1>
-        <div className="list-options flex list-none gap-6">
+        <div
+          className={`list-options flex list-none gap-6 
+    ${showMenu ? "max-sm:block" : "max-sm:hidden"
+            } max-sm:absolute max-sm:top-[100%] max-sm:left-[77%] max-sm:bg-[#eae2ce] max-sm:p-4 max-sm:rounded-xl max-sm:duration-700 ${isLightMode ? "max-sm:bg-[#eae2ce]" : "max-sm:bg-[#878585]"
+            }`}
+        >
           <li className="list">
             <a
               href="#"
@@ -75,6 +86,10 @@ const Header = () => {
             <FaLinkedin className="text-2xl" />
           </a>
         </div>
+        <BiMenuAltRight
+          onClick={handleMenu}
+          className="hidden max-sm:block text-2xl"
+        />
       </nav>
     </header>
   );
