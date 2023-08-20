@@ -13,12 +13,24 @@ const about = () => {
             }`}
         >
           <div className="name-container mb-3">
-            <h1
-              className={`name text-2xl font-bold ${isLightMode ? "text-black" : "text-white"
-                }`}
-            >
-              Ciro Antony Vasquez Mendez
-            </h1>
+            <div className="main-data flex justify-between items-center">
+              <h1
+                className={`name text-2xl font-bold ${isLightMode ? "text-black" : "text-white"
+                  }`}
+              >
+                Ciro Antony Vasquez Mendez
+              </h1>
+              <a
+                href="/CV/CV-Ciro-Vasquez.pdf"
+                download="CV-Ciro-Vasquez.pdf"
+                className={`download-button p-4  rounded-xl duration-700 ${isLightMode
+                    ? "bg-[#EDEBE6] text-black hover:bg-[#2c2c2c] hover:text-white"
+                    : "bg-[#2c2c2c] text-white hover:bg-[#EDEBE6] hover:text-black"
+                  }`}
+              >
+                CV Download
+              </a>
+            </div>
             <span
               className={`tag text-sm ${isLightMode ? "text-black" : "text-white"
                 }`}
