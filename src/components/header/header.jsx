@@ -45,7 +45,7 @@ const Header = () => {
         <div
           className={`list-options flex list-none gap-6 
     ${showMenu ? "max-sm:block" : "max-sm:hidden"
-            } max-sm:absolute max-sm:top-[100%] max-sm:left-[77%] max-sm:bg-[#eae2ce] max-sm:p-4 max-sm:rounded-xl max-sm:duration-700 ${isLightMode ? "max-sm:bg-[#eae2ce]" : "max-sm:bg-[#878585]"
+            } max-sm:absolute max-sm:top-[100%] max-sm:left-[77%]  max-sm:p-4 max-sm:rounded-xl max-sm:duration-700 ${isLightMode ? "max-sm:bg-[#eae2ce]" : "max-sm:bg-[#878585]"
             }`}
         >
           <li className="list">
