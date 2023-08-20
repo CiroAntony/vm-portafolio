@@ -61,7 +61,7 @@ const DogModel = () => {
   return (
     <div
       ref={containerRef}
-      className="dog-model-container bg-transparent mt-28 max-sm:w-2/3"
+      className="dog-model-container bg-transparent mt-28 max-sm:w-2/3 max-sm:h-80"
     >
       {loading && <p>Loading...</p>}
     </div>

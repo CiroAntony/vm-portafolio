@@ -6,17 +6,17 @@ const about = () => {
   const { isLightMode } = useDarkModeContext();
   return (
     <section id="main-about" className="w-full flex justify-center mb-36 ">
-      <div className="main-about flex w-full justify-center items-center flex-col">
+      <div className="main-about flex w-full justify-center items-center flex-col max-sm:w-full">
         <DogModel />
         <div
-          className={`info-container w-4/12  p-5 rounded-xl mt-7 ${isLightMode ? "bg-black bg-opacity-10" : "bg-white bg-opacity-10"
-            } max-lg:w-8/12`}
+          className={`info-container w-4/12  p-3 rounded-xl mt-7 ${isLightMode ? "bg-black bg-opacity-10" : "bg-white bg-opacity-10"
+            } max-lg:w-8/12  max-sm:w-11/12`}
         >
           <div className="name-container mb-3 ">
             <div className="main-data flex justify-between items-center">
               <h1
                 className={`name text-2xl font-bold ${isLightMode ? "text-black" : "text-white"
-                  }`}
+                  } max-sm:text-xl`}
               >
                 Ciro Antony Vasquez Mendez
               </h1>
@@ -26,7 +26,7 @@ const about = () => {
                 className={`download-button p-4  rounded-xl duration-700 ${isLightMode
                     ? "bg-[#EDEBE6] text-black hover:bg-[#2c2c2c] hover:text-white"
                     : "bg-[#2c2c2c] text-white hover:bg-[#EDEBE6] hover:text-black"
-                  }`}
+                  } max-sm:text-[14px] max-sm:w-[120px] max-sm:p-2`}
               >
                 CV Download
               </a>
@@ -46,7 +46,7 @@ const about = () => {
           </h2>
           <p
             className={`description w-2/1 ${isLightMode ? "text-black" : "text-white"
-              }`}
+              } max-sm:text-[16px]`}
           >
             Junior front-end web developer, dedicated to my profession and with
             experience in projects that I have created myself and developed
