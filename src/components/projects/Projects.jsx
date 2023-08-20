@@ -24,7 +24,10 @@ const Projects = () => {
             IT Service manager
           </h3>
           <div className="proyects-container">
-            <iframe src="https://dashboard-ctic.vercel.app/"></iframe>
+            <img
+              src="https://vasquezciro-ep3.000webhostapp.com/assets/ctic.png"
+              alt="IT Service manager"
+            />{" "}
           </div>
           <div className="tech-icons">
             <img
@@ -85,7 +88,10 @@ const Projects = () => {
           </h3>
 
           <div className="proyects-container">
-            <iframe src="https://challenge-oracle-one-theta.vercel.app/"></iframe>
+            <img
+              src="https://vasquezciro-ep3.000webhostapp.com/assets/encryptor.png"
+              alt="Text Encryptor"
+            />{" "}
           </div>
           <div className="tech-icons">
             <img
@@ -131,7 +137,10 @@ const Projects = () => {
             To-do App
           </h3>
           <div className="proyects-container">
-            <iframe src="https://task-manager-alpha-murex.vercel.app/"></iframe>
+            <img
+              src="https://vasquezciro-ep3.000webhostapp.com/assets/task.png"
+              alt="To-do App"
+            />{" "}
           </div>
           <div className="tech-icons">
             <img
@@ -177,7 +186,10 @@ const Projects = () => {
             Rick&Morty Website
           </h3>
           <div className="proyects-container">
-            <iframe src="https://api-rick-morty-nu.vercel.app/"></iframe>
+            <img
+              src="https://vasquezciro-ep3.000webhostapp.com/assets/rick.png"
+              alt="Rick&Morty Website"
+            />{" "}
           </div>
           <div className="tech-icons">
             <img
@@ -227,7 +239,10 @@ const Projects = () => {
             Password Generator
           </h3>
           <div className="proyects-container">
-            <iframe src="https://generador-de-contrase-as.vercel.app/"></iframe>
+            <img
+              src="https://vasquezciro-ep3.000webhostapp.com/assets/passgen.png"
+              alt="Password Generator"
+            />{" "}
           </div>
           <div className="tech-icons">
             <img

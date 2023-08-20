@@ -5,3 +5,10 @@
 body {
   font-family: Roboto;
 }
+
+.dog-model-container {
+  display: flex;
+  justify-content: center;
+  width: 640px;
+  height: 400px;
+}

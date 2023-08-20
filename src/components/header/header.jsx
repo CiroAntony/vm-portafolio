@@ -67,29 +67,33 @@ const Header = () => {
             </a>
           </li>
         </div>
-        <div className="social-icons flex gap-2">
-          {isLightMode ? (
-            <FaRegMoon
-              onClick={toggleLightMode}
-              className="text-2xl cursor-pointer"
+        <div className="social-icons flex gap-2 max-sm:gap-6">
+          <div className="redes flex gap-2">
+            <a href="https://github.com/CiroAntony">
+              <FaGithub className="text-2xl" />
+            </a>
+            <a href="https://www.linkedin.com/in/antonyv19/">
+              <FaLinkedin className="text-2xl" />
+            </a>
+          </div>
+          <div className="clicks-container flex gap-1">
+            {isLightMode ? (
+              <FaRegMoon
+                onClick={toggleLightMode}
+                className="text-2xl cursor-pointer"
+              />
+            ) : (
+              <FaRegSun
+                onClick={toggleLightMode}
+                className="text-2xl cursor-pointer"
+              />
+            )}
+            <BiMenuAltRight
+              onClick={handleMenu}
+              className="hidden max-sm:block text-2xl cursor-pointer"
             />
-          ) : (
-            <FaRegSun
-              onClick={toggleLightMode}
-              className="text-2xl cursor-pointer"
-            />
-          )}
-          <a href="https://github.com/CiroAntony">
-            <FaGithub className="text-2xl" />
-          </a>
-          <a href="https://www.linkedin.com/in/antonyv19/">
-            <FaLinkedin className="text-2xl" />
-          </a>
+          </div>
         </div>
-        <BiMenuAltRight
-          onClick={handleMenu}
-          className="hidden max-sm:block text-2xl"
-        />
       </nav>
     </header>
   );

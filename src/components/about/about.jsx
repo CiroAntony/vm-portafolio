@@ -10,9 +10,9 @@ const about = () => {
         <DogModel />
         <div
           className={`info-container w-4/12  p-5 rounded-xl mt-7 ${isLightMode ? "bg-black bg-opacity-10" : "bg-white bg-opacity-10"
-            }`}
+            } max-lg:w-8/12`}
         >
-          <div className="name-container mb-3">
+          <div className="name-container mb-3 ">
             <div className="main-data flex justify-between items-center">
               <h1
                 className={`name text-2xl font-bold ${isLightMode ? "text-black" : "text-white"
