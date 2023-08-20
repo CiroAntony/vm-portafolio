@@ -6,6 +6,8 @@ import { useDarkModeContext } from "../hooks/DarkModeContext";
 const Header = () => {
   const { isLightMode, toggleLightMode } = useDarkModeContext();
 
+  const titulo = "</ Vasquez>";
+
   const handleSmoothScroll = (event, targetId) => {
     event.preventDefault();
     const targetElement = document.getElementById(targetId);
@@ -21,15 +23,17 @@ const Header = () => {
     <header className="main-header w-full flex justify-center">
       <nav
         className={`nav-container fixed z-50 flex justify-between items-center h-16 backdrop-blur-xl rounded-xl w-6/12 px-8 
-        ${
-          isLightMode
-            ? "backdrop-blur-xl text-black"
+        ${isLightMode
+            ? "bg-white bg-opacity-25 text-black"
             : "backdrop-blur-xl text-white"
-        }`}
+          }`}
       >
-        <h1 className={`logo ${isLightMode ? "text-black" : "text-white"}`}>
+        <h1
+          className={`logo font-bold text-[16px] ${isLightMode ? "text-black" : "text-white"
+            }`}
+        >
           <a href="/" className="logo-link">
-            Vasquez
+            {titulo}
           </a>
         </h1>
         <div className="list-options flex list-none gap-6">
@@ -51,23 +55,25 @@ const Header = () => {
               Skills
             </a>
           </li>
-          <li className="list">
-            <a
-              href="/contact"
-              className={`link ${isLightMode ? "text-black" : "text-white"}`}
-            >
-              ContactMe
-            </a>
-          </li>
         </div>
-        <div className="icons flex gap-3">
+        <div className="social-icons flex gap-2">
           {isLightMode ? (
-            <FaRegMoon onClick={toggleLightMode} />
+            <FaRegMoon
+              onClick={toggleLightMode}
+              className="text-2xl cursor-pointer"
+            />
           ) : (
-            <FaRegSun onClick={toggleLightMode} />
+            <FaRegSun
+              onClick={toggleLightMode}
+              className="text-2xl cursor-pointer"
+            />
           )}
-          <FaGithub />
-          <FaLinkedin />
+          <a href="https://github.com/CiroAntony">
+            <FaGithub className="text-2xl" />
+          </a>
+          <a href="https://www.linkedin.com/in/antonyv19/">
+            <FaLinkedin className="text-2xl" />
+          </a>
         </div>
       </nav>
     </header>

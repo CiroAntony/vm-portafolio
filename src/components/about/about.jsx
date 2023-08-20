@@ -5,7 +5,7 @@ import DogModel from "../hooks/DogModel";
 const about = () => {
   const { isLightMode } = useDarkModeContext();
   return (
-    <section id="about" className="w-full flex justify-center mb-36 ">
+    <section id="main-about" className="w-full flex justify-center mb-36 ">
       <div className="main-about flex w-full justify-center items-center flex-col">
         <DogModel />
         <div

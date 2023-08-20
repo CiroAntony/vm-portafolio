@@ -36,11 +36,11 @@ const DogModel = () => {
       scene.add(model);
 
       // Ajustar la posición de la cámara según las necesidades
-      camera.position.set(2, 5, 5); // Cambia el valor de Y y Z para ajustar el zoom
+      camera.position.set(5, 6, 2);
       camera.lookAt(model.position);
 
       // Agregar una luz ambiental para iluminar el modelo de manera uniforme
-      const ambientLight = new THREE.AmbientLight(0xffffff, 2); // Color blanco y intensidad 1
+      const ambientLight = new THREE.AmbientLight(0xffffff, 2);
       scene.add(ambientLight);
 
       setLoading(false);
@@ -65,8 +65,8 @@ const DogModel = () => {
   return (
     <div
       ref={containerRef}
-      style={{ width: "100%", height: "calc(50vh - 200px)" }}
-      className="bg-transparent mt-24"
+      style={{ width: "40%", height: "calc(65vh - 250px)" }}
+      className="bg-transparent mt-20"
     >
       {loading && <p>Loading...</p>}
     </div>

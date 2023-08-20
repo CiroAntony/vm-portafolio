@@ -10,18 +10,16 @@ const Projects = () => {
       className="main-projects flex flex-col items-center"
     >
       <h3
-        className={`font-bold text-4xl text-center mb-9 ${
-          isLightMode ? "text-black" : "text-white"
-        }`}
+        className={`font-bold text-3xl text-center mb-9 ${isLightMode ? "text-black" : "text-white"
+          }`}
       >
-        Projects
+        My Projects
       </h3>
       <div className="projects flex flex-wrap justify-center">
         <div className="pro-container hover:-translate-y-4 duration-700">
           <h3
-            className={`project-name ${
-              isLightMode ? "text-black" : "text-white"
-            }`}
+            className={`project-name ${isLightMode ? "text-black" : "text-white"
+              }`}
           >
             IT Service manager
           </h3>
@@ -59,21 +57,19 @@ const Projects = () => {
           <div className="proj-links">
             <a
               href="https://dashboard-ctic.vercel.app/"
-              className={`${
-                isLightMode
+              className={`${isLightMode
                   ? "text-black border-2 border-black hover:text-white hover:bg-black"
                   : "text-white border-2 border-white hover:text-black hover:bg-white"
-              }`}
+                }`}
             >
               Visit
             </a>
             <a
               href="https://github.com/CiroAntony/dashboard-CTIC"
-              className={`${
-                isLightMode
+              className={`${isLightMode
                   ? "text-black border-2 border-black hover:text-white hover:bg-black"
                   : "text-white border-2 border-white hover:text-black hover:bg-white"
-              }`}
+                }`}
             >
               Respository
             </a>
@@ -82,9 +78,8 @@ const Projects = () => {
 
         <div className="pro-container hover:-translate-y-4 duration-700">
           <h3
-            className={`project-name ${
-              isLightMode ? "text-black" : "text-white"
-            }`}
+            className={`project-name ${isLightMode ? "text-black" : "text-white"
+              }`}
           >
             Text Encryptor
           </h3>
@@ -109,21 +104,19 @@ const Projects = () => {
           <div className="proj-links">
             <a
               href="https://challenge-oracle-one-theta.vercel.app/"
-              className={`${
-                isLightMode
+              className={`${isLightMode
                   ? "text-black border-2 border-black hover:text-white hover:bg-black"
                   : "text-white border-2 border-white hover:text-black hover:bg-white"
-              }`}
+                }`}
             >
               Visit
             </a>
             <a
               href="https://github.com/CiroAntony/EncryptDecrypt-Challenge-Oracle-ONE"
-              className={`${
-                isLightMode
+              className={`${isLightMode
                   ? "text-black border-2 border-black hover:text-white hover:bg-black"
                   : "text-white border-2 border-white hover:text-black hover:bg-white"
-              }`}
+                }`}
             >
               Respository
             </a>
@@ -132,9 +125,8 @@ const Projects = () => {
 
         <div className="pro-container hover:-translate-y-4 duration-700">
           <h3
-            className={`project-name ${
-              isLightMode ? "text-black" : "text-white"
-            }`}
+            className={`project-name ${isLightMode ? "text-black" : "text-white"
+              }`}
           >
             To-do App
           </h3>
@@ -158,21 +150,19 @@ const Projects = () => {
           <div className="proj-links">
             <a
               href="https://task-manager-alpha-murex.vercel.app/"
-              className={`${
-                isLightMode
+              className={`${isLightMode
                   ? "text-black border-2 border-black hover:text-white hover:bg-black"
                   : "text-white border-2 border-white hover:text-black hover:bg-white"
-              }`}
+                }`}
             >
               Visit
             </a>
             <a
               href="https://github.com/CiroAntony/task-manager"
-              className={`${
-                isLightMode
+              className={`${isLightMode
                   ? "text-black border-2 border-black hover:text-white hover:bg-black"
                   : "text-white border-2 border-white hover:text-black hover:bg-white"
-              }`}
+                }`}
             >
               Respository
             </a>
@@ -181,9 +171,8 @@ const Projects = () => {
 
         <div className="pro-container hover:-translate-y-4 duration-700">
           <h3
-            className={`project-name ${
-              isLightMode ? "text-black" : "text-white"
-            }`}
+            className={`project-name ${isLightMode ? "text-black" : "text-white"
+              }`}
           >
             Rick&Morty Website
           </h3>
@@ -211,21 +200,19 @@ const Projects = () => {
           <div className="proj-links">
             <a
               href="https://api-rick-morty-nu.vercel.app/"
-              className={`${
-                isLightMode
+              className={`${isLightMode
                   ? "text-black border-2 border-black hover:text-white hover:bg-black"
                   : "text-white border-2 border-white hover:text-black hover:bg-white"
-              }`}
+                }`}
             >
               Visit
             </a>
             <a
               href="https://github.com/CiroAntony/API-Rick-Morty"
-              className={`${
-                isLightMode
+              className={`${isLightMode
                   ? "text-black border-2 border-black hover:text-white hover:bg-black"
                   : "text-white border-2 border-white hover:text-black hover:bg-white"
-              }`}
+                }`}
             >
               Respository
             </a>
@@ -234,9 +221,8 @@ const Projects = () => {
 
         <div className="pro-container hover:-translate-y-4 duration-700">
           <h3
-            className={`project-name ${
-              isLightMode ? "text-black" : "text-white"
-            }`}
+            className={`project-name ${isLightMode ? "text-black" : "text-white"
+              }`}
           >
             Password Generator
           </h3>
@@ -260,21 +246,19 @@ const Projects = () => {
           <div className="proj-links">
             <a
               href="https://generador-de-contrase-as.vercel.app/"
-              className={`${
-                isLightMode
+              className={`${isLightMode
                   ? "text-black border-2 border-black hover:text-white hover:bg-black"
                   : "text-white border-2 border-white hover:text-black hover:bg-white"
-              }`}
+                }`}
             >
               Visit
             </a>
             <a
               href="https://github.com/CiroAntony/Generador-de-contrase-as"
-              className={`${
-                isLightMode
+              className={`${isLightMode
                   ? "text-black border-2 border-black hover:text-white hover:bg-black"
                   : "text-white border-2 border-white hover:text-black hover:bg-white"
-              }`}
+                }`}
             >
               Respository
             </a>

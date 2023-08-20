@@ -14,16 +14,14 @@ const skills = () => {
   return (
     <section id="skills" className="mt-24">
       <h2
-        className={`skills-title text-4xl font-bold text-center ${
-          isLightMode ? "text-black" : "text-white"
-        }`}
+        className={`skills-title text-3xl font-bold text-center ${isLightMode ? "text-black" : "text-white"
+          }`}
       >
         Skills
       </h2>
       <div
-        className={`jskills-container flex flex-wrap items-center justify-center m-2 text-center ${
-          isLightMode ? "text-black" : "text-white"
-        }`}
+        className={`jskills-container flex flex-wrap items-center justify-center m-2 text-center ${isLightMode ? "text-black" : "text-white"
+          }`}
       >
         <div className="icons hover:-translate-y-4 duration-700">
           <img src={html} alt="html" />
