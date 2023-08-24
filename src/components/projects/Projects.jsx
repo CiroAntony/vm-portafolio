@@ -1,6 +1,21 @@
 import React from "react";
 import "./projects.css";
 import { useDarkModeContext } from "../hooks/DarkModeContext";
+import ctic from "../../assets/ctic.png";
+import encrypt from "../../assets/encryptor.png";
+import task from "../../assets/task.png";
+import rick from "../../assets/rick.png";
+import pass from "../../assets/passgen.png";
+
+/* icons */
+import react from "../../assets/react-icon.png";
+import html from "../../assets/html5.png";
+import css from "../../assets/css.png";
+import js from "../../assets/js.png";
+import tailwind from "../../assets/tailwind.png";
+import mysql from "../../assets/mysql.png";
+import node from "../../assets/node.png";
+import api from "../../assets/api.png";
 
 const Projects = () => {
   const { isLightMode } = useDarkModeContext();
@@ -10,69 +25,51 @@ const Projects = () => {
       className="main-projects flex flex-col items-center"
     >
       <h3
-        className={`font-bold text-3xl text-center mb-9 ${isLightMode ? "text-black" : "text-white"
-          }`}
+        className={`font-bold text-3xl text-center mb-9 ${
+          isLightMode ? "text-black" : "text-white"
+        }`}
       >
         My Projects
       </h3>
       <div className="projects flex flex-wrap justify-center">
         <div className="pro-container hover:-translate-y-4 duration-700">
           <h3
-            className={`project-name ${isLightMode ? "text-black" : "text-white"
-              }`}
+            className={`project-name ${
+              isLightMode ? "text-black" : "text-white"
+            }`}
           >
             IT Service manager
           </h3>
           <div className="proyects-container">
-            <img
-              src="https://vasquezciro-ep3.000webhostapp.com/assets/ctic.png"
-              alt="IT Service manager"
-            />{" "}
+            <img src={ctic} alt="IT Service manager" />{" "}
           </div>
           <div className="tech-icons">
-            <img
-              src="https://vasquezciro-ep3.000webhostapp.com/assets/react-icon.png"
-              alt="React.js"
-            />
-
-            <img
-              src="https://vasquezciro-ep3.000webhostapp.com/assets/html5.png"
-              alt="HTML:5"
-            />
-            <img
-              src="https://vasquezciro-ep3.000webhostapp.com/assets/css.png"
-              alt="CSS"
-            />
-            <img
-              src="https://vasquezciro-ep3.000webhostapp.com/assets/js.png"
-              alt="JavaScript"
-            />
-            <img
-              src="https://vasquezciro-ep3.000webhostapp.com/assets/node.png"
-              alt="Node.JS"
-            />
-            <img
-              src="https://vasquezciro-ep3.000webhostapp.com/assets/mysql.png"
-              alt="My Sql"
-            />
+            <img src={react} alt="React.js" />
+            <img src={html} alt="HTML:5" />
+            <img src={css} alt="CSS" />
+            <img src={js} alt="JavaScript" />
+            <img src={node} alt="Node.JS" />
+            <img src={mysql} alt="My Sql" />
           </div>
 
           <div className="proj-links">
             <a
               href="https://dashboard-ctic.vercel.app/"
-              className={`${isLightMode
+              className={`${
+                isLightMode
                   ? "text-black border-2 border-black hover:text-white hover:bg-black"
                   : "text-white border-2 border-white hover:text-black hover:bg-white"
-                }`}
+              }`}
             >
               Visit
             </a>
             <a
               href="https://github.com/CiroAntony/dashboard-CTIC"
-              className={`${isLightMode
+              className={`${
+                isLightMode
                   ? "text-black border-2 border-black hover:text-white hover:bg-black"
                   : "text-white border-2 border-white hover:text-black hover:bg-white"
-                }`}
+              }`}
             >
               Respository
             </a>
@@ -81,48 +78,39 @@ const Projects = () => {
 
         <div className="pro-container hover:-translate-y-4 duration-700">
           <h3
-            className={`project-name ${isLightMode ? "text-black" : "text-white"
-              }`}
+            className={`project-name ${
+              isLightMode ? "text-black" : "text-white"
+            }`}
           >
             Text Encryptor
           </h3>
 
           <div className="proyects-container">
-            <img
-              src="https://vasquezciro-ep3.000webhostapp.com/assets/encryptor.png"
-              alt="Text Encryptor"
-            />{" "}
+            <img src={encrypt} alt="Text Encryptor" />{" "}
           </div>
           <div className="tech-icons">
-            <img
-              src="https://vasquezciro-ep3.000webhostapp.com/assets/html5.png"
-              alt="HTML:5"
-            />
-            <img
-              src="https://vasquezciro-ep3.000webhostapp.com/assets/css.png"
-              alt="CSS"
-            />
-            <img
-              src="https://vasquezciro-ep3.000webhostapp.com/assets/js.png"
-              alt="JavaScript"
-            />
+            <img src={html} alt="HTML:5" />
+            <img src={css} alt="CSS" />
+            <img src={js} alt="JavaScript" />{" "}
           </div>
           <div className="proj-links">
             <a
               href="https://challenge-oracle-one-theta.vercel.app/"
-              className={`${isLightMode
+              className={`${
+                isLightMode
                   ? "text-black border-2 border-black hover:text-white hover:bg-black"
                   : "text-white border-2 border-white hover:text-black hover:bg-white"
-                }`}
+              }`}
             >
               Visit
             </a>
             <a
               href="https://github.com/CiroAntony/EncryptDecrypt-Challenge-Oracle-ONE"
-              className={`${isLightMode
+              className={`${
+                isLightMode
                   ? "text-black border-2 border-black hover:text-white hover:bg-black"
                   : "text-white border-2 border-white hover:text-black hover:bg-white"
-                }`}
+              }`}
             >
               Respository
             </a>
@@ -131,47 +119,38 @@ const Projects = () => {
 
         <div className="pro-container hover:-translate-y-4 duration-700">
           <h3
-            className={`project-name ${isLightMode ? "text-black" : "text-white"
-              }`}
+            className={`project-name ${
+              isLightMode ? "text-black" : "text-white"
+            }`}
           >
             To-do App
           </h3>
           <div className="proyects-container">
-            <img
-              src="https://vasquezciro-ep3.000webhostapp.com/assets/task.png"
-              alt="To-do App"
-            />{" "}
+            <img src={task} alt="To-do App" />{" "}
           </div>
           <div className="tech-icons">
-            <img
-              src="https://vasquezciro-ep3.000webhostapp.com/assets/html5.png"
-              alt="HTML:5"
-            />
-            <img
-              src="https://vasquezciro-ep3.000webhostapp.com/assets/css.png"
-              alt="CSS"
-            />
-            <img
-              src="https://vasquezciro-ep3.000webhostapp.com/assets/js.png"
-              alt="JavaScript"
-            />
+            <img src={html} alt="HTML:5" />
+            <img src={css} alt="CSS" />
+            <img src={js} alt="JavaScript" />{" "}
           </div>
           <div className="proj-links">
             <a
               href="https://task-manager-alpha-murex.vercel.app/"
-              className={`${isLightMode
+              className={`${
+                isLightMode
                   ? "text-black border-2 border-black hover:text-white hover:bg-black"
                   : "text-white border-2 border-white hover:text-black hover:bg-white"
-                }`}
+              }`}
             >
               Visit
             </a>
             <a
               href="https://github.com/CiroAntony/task-manager"
-              className={`${isLightMode
+              className={`${
+                isLightMode
                   ? "text-black border-2 border-black hover:text-white hover:bg-black"
                   : "text-white border-2 border-white hover:text-black hover:bg-white"
-                }`}
+              }`}
             >
               Respository
             </a>
@@ -180,51 +159,39 @@ const Projects = () => {
 
         <div className="pro-container hover:-translate-y-4 duration-700">
           <h3
-            className={`project-name ${isLightMode ? "text-black" : "text-white"
-              }`}
+            className={`project-name ${
+              isLightMode ? "text-black" : "text-white"
+            }`}
           >
             Rick&Morty Website
           </h3>
           <div className="proyects-container">
-            <img
-              src="https://vasquezciro-ep3.000webhostapp.com/assets/rick.png"
-              alt="Rick&Morty Website"
-            />{" "}
+            <img src={rick} alt="Rick&Morty Website" />{" "}
           </div>
           <div className="tech-icons">
-            <img
-              src="https://vasquezciro-ep3.000webhostapp.com/assets/html5.png"
-              alt="HTML:5"
-            />
-            <img
-              src="https://vasquezciro-ep3.000webhostapp.com/assets/css.png"
-              alt="CSS"
-            />
-            <img
-              src="https://vasquezciro-ep3.000webhostapp.com/assets/js.png"
-              alt="JavaScript"
-            />
-            <img
-              src="https://vasquezciro-ep3.000webhostapp.com/assets/api.png"
-              alt="API"
-            />
+            <img src={html} alt="HTML:5" />
+            <img src={css} alt="CSS" />
+            <img src={js} alt="JavaScript" />
+            <img src={api} alt="API" />
           </div>
           <div className="proj-links">
             <a
               href="https://api-rick-morty-nu.vercel.app/"
-              className={`${isLightMode
+              className={`${
+                isLightMode
                   ? "text-black border-2 border-black hover:text-white hover:bg-black"
                   : "text-white border-2 border-white hover:text-black hover:bg-white"
-                }`}
+              }`}
             >
               Visit
             </a>
             <a
               href="https://github.com/CiroAntony/API-Rick-Morty"
-              className={`${isLightMode
+              className={`${
+                isLightMode
                   ? "text-black border-2 border-black hover:text-white hover:bg-black"
                   : "text-white border-2 border-white hover:text-black hover:bg-white"
-                }`}
+              }`}
             >
               Respository
             </a>
@@ -233,47 +200,38 @@ const Projects = () => {
 
         <div className="pro-container hover:-translate-y-4 duration-700">
           <h3
-            className={`project-name ${isLightMode ? "text-black" : "text-white"
-              }`}
+            className={`project-name ${
+              isLightMode ? "text-black" : "text-white"
+            }`}
           >
             Password Generator
           </h3>
           <div className="proyects-container">
-            <img
-              src="https://vasquezciro-ep3.000webhostapp.com/assets/passgen.png"
-              alt="Password Generator"
-            />{" "}
+            <img src={pass} alt="Password Generator" />{" "}
           </div>
           <div className="tech-icons">
-            <img
-              src="https://vasquezciro-ep3.000webhostapp.com/assets/html5.png"
-              alt="HTML:5"
-            />
-            <img
-              src="https://vasquezciro-ep3.000webhostapp.com/assets/css.png"
-              alt="CSS"
-            />
-            <img
-              src="https://vasquezciro-ep3.000webhostapp.com/assets/js.png"
-              alt="JavaScript"
-            />
+            <img src={html} alt="HTML:5" />
+            <img src={css} alt="CSS" />
+            <img src={js} alt="JavaScript" />
           </div>
           <div className="proj-links">
             <a
               href="https://generador-de-contrase-as.vercel.app/"
-              className={`${isLightMode
+              className={`${
+                isLightMode
                   ? "text-black border-2 border-black hover:text-white hover:bg-black"
                   : "text-white border-2 border-white hover:text-black hover:bg-white"
-                }`}
+              }`}
             >
               Visit
             </a>
             <a
               href="https://github.com/CiroAntony/Generador-de-contrase-as"
-              className={`${isLightMode
+              className={`${
+                isLightMode
                   ? "text-black border-2 border-black hover:text-white hover:bg-black"
                   : "text-white border-2 border-white hover:text-black hover:bg-white"
-                }`}
+              }`}
             >
               Respository
             </a>
