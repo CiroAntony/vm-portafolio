@@ -41,7 +41,7 @@ const Projects = () => {
             Notes
           </h3>
           <div className="proyects-container">
-            <img src={Notas} alt="Notes app" />{" "}
+            <img src={notas} alt="Notes app" />{" "}
           </div>
           <div className="tech-icons">
             <img src={react} alt="React.js" />
