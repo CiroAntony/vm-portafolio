@@ -1,7 +1,7 @@
 import React from "react";
 import "./projects.css";
 import { useDarkModeContext } from "../hooks/DarkModeContext";
-import ctic from "../../assets/ctic.png";
+import notas from "../../assets/notas.png";
 import encrypt from "../../assets/encryptor.png";
 import task from "../../assets/task.png";
 import rick from "../../assets/rick.png";
@@ -38,23 +38,22 @@ const Projects = () => {
               isLightMode ? "text-black" : "text-white"
             }`}
           >
-            IT Service manager
+            Notes
           </h3>
           <div className="proyects-container">
-            <img src={ctic} alt="IT Service manager" />{" "}
+            <img src={Notas} alt="Notes app" />{" "}
           </div>
           <div className="tech-icons">
             <img src={react} alt="React.js" />
             <img src={html} alt="HTML:5" />
             <img src={css} alt="CSS" />
             <img src={js} alt="JavaScript" />
-            <img src={node} alt="Node.JS" />
-            <img src={mysql} alt="My Sql" />
+            <img src={tailwind} alt="tailwind" />
           </div>
 
           <div className="proj-links">
             <a
-              href="https://dashboard-ctic.vercel.app/"
+              href="https://ur-notes.vercel.app/"
               className={`${
                 isLightMode
                   ? "text-black border-2 border-black hover:text-white hover:bg-black"
@@ -64,7 +63,7 @@ const Projects = () => {
               Visit
             </a>
             <a
-              href="https://github.com/CiroAntony/dashboard-CTIC"
+              href="https://github.com/CiroAntony/UrNotes"
               className={`${
                 isLightMode
                   ? "text-black border-2 border-black hover:text-white hover:bg-black"
