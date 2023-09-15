@@ -29,14 +29,16 @@ const Header = () => {
     <header className="main-header w-full flex justify-center">
       <nav
         className={`nav-container fixed z-50 flex justify-between items-center h-16 backdrop-blur-xl rounded-xl w-6/12 px-8 
-        ${isLightMode
+        ${
+          isLightMode
             ? "bg-white bg-opacity-25 text-black"
             : "backdrop-blur-xl text-white"
-          } max-lg:w-10/12 max-sm:w-11/12`}
+        } max-lg:w-10/12 max-sm:w-11/12`}
       >
         <h1
-          className={`logo font-bold text-[16px] ${isLightMode ? "text-black" : "text-white"
-            }`}
+          className={`logo font-bold text-[16px] ${
+            isLightMode ? "text-black" : "text-white"
+          }`}
         >
           <a href="/" className="logo-link">
             {titulo}
@@ -44,9 +46,11 @@ const Header = () => {
         </h1>
         <div
           className={`list-options flex list-none gap-6 
-    ${showMenu ? "max-sm:block" : "max-sm:hidden"
-            } max-sm:absolute max-sm:top-[100%] max-sm:left-[77%]  max-sm:p-4 max-sm:rounded-xl max-sm:duration-700 ${isLightMode ? "max-sm:bg-[#eae2ce]" : "max-sm:bg-[#878585]"
-            }`}
+    ${
+      showMenu ? "max-sm:block" : "max-sm:hidden"
+    } max-sm:absolute max-sm:top-[100%] max-sm:left-[77%]  max-sm:p-4 max-sm:rounded-xl max-sm:duration-700 ${
+            isLightMode ? "max-sm:bg-[#eae2ce]" : "max-sm:bg-[#878585]"
+          }`}
         >
           <li className="list">
             <a
@@ -64,6 +68,14 @@ const Header = () => {
               className={`link ${isLightMode ? "text-black" : "text-white"}`}
             >
               Skills
+            </a>
+          </li>
+          <li className="list">
+            <a
+              href="mailto:vasquezciro654@gmail.com"
+              className={`link ${isLightMode ? "text-black" : "text-white"}`}
+            >
+              ContactMe
             </a>
           </li>
         </div>
