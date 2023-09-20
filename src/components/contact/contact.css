@@ -1,0 +1,74 @@
+.contact-form {
+  width: 25vw;
+  padding: 32px 22px 32px 22px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  margin: 12px;
+  margin-bottom: 18px;
+}
+
+input[type="text"] {
+  border-radius: 20px;
+  margin-top: 4px;
+  padding: 4px;
+  outline: none;
+  font-size: 16px;
+  padding-left: 10px;
+  color: black;
+}
+
+.for-light {
+  background: rgba(0, 0, 0, 0.11);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.6px);
+  -webkit-backdrop-filter: blur(7.6px);
+  border: 1px solid rgba(0, 0, 0, 1);
+}
+.for-dark {
+  background: rgba(255, 255, 255, 0.27);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.6px);
+  -webkit-backdrop-filter: blur(8.6px);
+  border: 1px solid rgba(255, 255, 255, 1);
+}
+
+#message {
+  padding-left: 10px;
+  outline: none;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  color: black;
+}
+
+@media (max-width: 768px) {
+  .contact-form {
+    width: 80%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 83vh;
+  }
+  .contact-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 60vh;
+  }
+  .ctn {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+}

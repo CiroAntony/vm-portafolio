@@ -6,6 +6,7 @@ import Projects from "./components/projects/Projects.jsx";
 import Skills from "./components/skills/skills.jsx";
 import { useDarkModeContext } from "./components/hooks/DarkModeContext";
 import Footer from "./components/footer/Footer";
+import Contact from "./components/contact/Contact";
 
 const App = () => {
   const { isLightMode } = useDarkModeContext();
@@ -18,6 +19,7 @@ const App = () => {
       <About />
       <Projects />
       <Skills />
+      <Contact />
       <Footer />
     </div>
   );
