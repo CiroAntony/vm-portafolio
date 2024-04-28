@@ -16,6 +16,8 @@ import tailwind from "../../assets/tailwind.png";
 import mysql from "../../assets/mysql.png";
 import node from "../../assets/node.png";
 import api from "../../assets/api.png";
+import Spotify from "../../assets/spotify.png";
+import astro from "../../assets/astro.svg";
 
 const Projects = () => {
   const { isLightMode } = useDarkModeContext();
@@ -32,6 +34,49 @@ const Projects = () => {
         My Projects
       </h3>
       <div className="projects flex flex-wrap justify-center">
+      <div className="pro-container hover:-translate-y-4 duration-700">
+          <h3
+            className={`project-name ${
+              isLightMode ? "text-black" : "text-white"
+            }`}
+          >
+            Spotify-Clone
+          </h3>
+          <div className="proyects-container">
+            <img src={Spotify} alt="Spotify clone" />{" "}
+          </div>
+          <div className="tech-icons">
+            <img src={astro} alt="React.js" />
+            <img src={html} alt="HTML:5" />
+            <img src={css} alt="CSS" />
+            <img src={js} alt="JavaScript" />
+            <img src={tailwind} alt="tailwind" />
+          </div>
+
+          <div className="proj-links">
+            <a
+              href="https://spotify-clone-chi-umber.vercel.app/"
+              className={`${
+                isLightMode
+                  ? "text-black border-2 border-black hover:text-white hover:bg-black"
+                  : "text-white border-2 border-white hover:text-black hover:bg-white"
+              }`}
+            >
+              Visit
+            </a>
+            <a
+              href="https://github.com/CiroAntony/spotify-clone"
+              className={`${
+                isLightMode
+                  ? "text-black border-2 border-black hover:text-white hover:bg-black"
+                  : "text-white border-2 border-white hover:text-black hover:bg-white"
+              }`}
+            >
+              Respository
+            </a>
+          </div>
+        </div>
+
         <div className="pro-container hover:-translate-y-4 duration-700">
           <h3
             className={`project-name ${
